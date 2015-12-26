@@ -36,4 +36,4 @@ EXPOSE 80 443 5665
 VOLUME  ["/etc/icinga2", "/etc/icinga-web", "/etc/icingaweb2", "/var/lib/mysql", "/var/lib/icinga2", "/etc/ssmtp"]
 
 # Initialize and run Supervisor
-CMD ["/opt/run"]
+ENTRYPOINT ["/opt/run"]
